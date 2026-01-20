@@ -296,6 +296,12 @@ export default function sitemap() {
       changeFrequency: "weekly",
       priority: 0.95,
     },
+     {
+      url: `${baseUrl}/blogs/hair-fall-causes-advanced-hair-loss-treatments-dermatologist-guide`,
+      lastModified: currentDate,
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
 
   ];
 }
