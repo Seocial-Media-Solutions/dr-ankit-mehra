@@ -302,6 +302,12 @@ export default function sitemap() {
       changeFrequency: "weekly",
       priority: 0.95,
     },
+     {
+      url: `${baseUrl}/blogs/laser-skin-treatment-benefits-side-effects-dermatologist-guide`,
+      lastModified: currentDate,
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
 
   ];
 }
