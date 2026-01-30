@@ -308,6 +308,11 @@ export default function sitemap() {
       changeFrequency: "weekly",
       priority: 0.95,
     },
-
+    {
+      url: `${baseUrl}/blogs/hair-fall-reasons-solutions-dermatologist-guide`,
+      lastModified: currentDate,
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },  
   ];
 }
