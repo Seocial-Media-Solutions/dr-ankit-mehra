@@ -8,6 +8,11 @@ import NewYearPopup from "@/components/NewYearPopup";
 // import FloatingContact from '@/components/FloatingContact';
  
 
+
+export const metadata = {
+  metadataBase: new URL('https://drankitmehra.com'),
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
