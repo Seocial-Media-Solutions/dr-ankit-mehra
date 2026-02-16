@@ -314,5 +314,11 @@ export default function sitemap() {
       changeFrequency: "weekly",
       priority: 0.95,
     },  
+    {
+      url: `${baseUrl}/blogs/best-acne-treatment-options-dermatologist-guide`,
+      lastModified: currentDate,
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },  
   ];
 }
