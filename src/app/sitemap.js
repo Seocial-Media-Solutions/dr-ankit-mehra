@@ -320,5 +320,11 @@ export default function sitemap() {
       changeFrequency: "weekly",
       priority: 0.95,
     },  
+    
+    {url: `${baseUrl}/blogs/skin-allergies-during-weather-change-symptoms-treatment`,
+      lastModified: currentDate,
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
   ];
 }
