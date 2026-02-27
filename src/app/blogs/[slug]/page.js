@@ -184,25 +184,22 @@ export default async function SingleBlogPage({ params }) {
   });
 
   return (
-    <article className="min-h-screen bg-gradient-to-b from-blue-50 to-teal-50">
-      <div className="relative w-full h-80 md:h-120 max-w-6xl mx-auto">
-        <Image
-          src={blog.image || "/images/home/dermatologist-blog-hero.jpg"}
-          alt={blog.alt || blog.title}
-          fill
-          priority
-          className="object-fit rounded-lg shadow-lg"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#B97A57] to-transparent opacity-70 rounded-lg"></div>
-        <div className="absolute bottom-0 left-0 right-0 p-6 md:p-12">
-          <h1 className="text-3xl md:text-5xl font-bold text-white mb-2 drop-shadow-md">
-            {blog.title}
-          </h1>
+    <article className="min-h-screen bg-gradient-to-b from-blue-50 to-teal-50 lg:pt-5 pt-5">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="relative mt-6 lg:mt-0 lg:aspect-[2/1] aspect-[3/2] w-full">
+          <Image
+            src={blog.image || "/images/home/dermatologist-blog-hero.jpg"}
+            alt={blog.alt || blog.title}
+            fill
+            priority
+            className="object-cover rounded-lg shadow-lg"
+          />
+          {/* <div className="absolute inset-0 bg-gradient-to-t from-[#B97A57] to-transparent opacity-70 rounded-lg"></div> */}
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
-        <div className="bg-white rounded-xl shadow-lg overflow-hidden p-6 md:p-10 border border-blue-100">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-6 md:py-12">
+        <div className="bg-white rounded-xl shadow-lg overflow-hidden p-5 sm:p-6 md:p-10 border border-blue-100">
           <div className="flex items-center mb-8 pb-4 border-b border-blue-100">
             <div className="flex items-center">
               <div className="mr-4">
@@ -232,10 +229,12 @@ export default async function SingleBlogPage({ params }) {
             </div>
           )}
 
+
+
           <BlogContent content={blog.content} />
-           <div> 
-          <Link 
-              href="/bookconsultation" 
+          <div>
+            <Link
+              href="/bookconsultation"
               className="bg-[#FAF2F0]  border-[#BF7F62] border hover:text-white  hover:bg-[#BF7F62]  font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105 shadow-lg"
             >
               Book an Consultation

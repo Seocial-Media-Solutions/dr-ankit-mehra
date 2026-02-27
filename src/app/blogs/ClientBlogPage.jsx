@@ -67,13 +67,14 @@ const ClientBlogPage = ({ blogs }) => {
   return (
     <div className="min-h-screen bg-[#FEF7F8] py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-      
- <div>
-          <h1 className="text-4xl md:text-5xl text-[#a86e54] text-center font-serif max-w-6xl mx-auto leading-snug mb-2">
+
+        <div>
+          <h1 className="text-3xl md:text-5xl text-[#a86e54] text-center font-serif max-w-6xl mx-auto leading-snug mb-4">
             Welcome to Dr. Ankit Mehra's Dermatology Clinic
           </h1>
-          <h2 className="flex   text-gray-700 font-serif text-xl mb-7 justify-center">
-            Where expertise, innovation, and compassionate care unite to offer comprehensive solutions for all your skin and hair needs.</h2>
+          <h2 className="text-center text-gray-700 font-serif text-base md:text-xl mb-7 max-w-4xl mx-auto px-4 md:px-0">
+            Where expertise, innovation, and compassionate care unite to offer comprehensive solutions for all your skin and hair needs.
+          </h2>
         </div>
         {/* Blog Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -82,7 +83,7 @@ const ClientBlogPage = ({ blogs }) => {
               key={`${blog.id}-${blogIndex}`}
               className="bg-[#F9F0EB] rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl group"
             >
-              <div className="relative aspect-video w-full overflow-hidden">
+              <div className="relative aspect-[3/2] w-full overflow-hidden">
                 <Image
                   src={blog.image || "/images/dermatology-blog-placeholder.jpg"}
                   alt={blog.alt || blog.title}
@@ -92,7 +93,7 @@ const ClientBlogPage = ({ blogs }) => {
                   priority={blog.id <= 3}
                 />
                 {blog.tags?.[0] && (
-                  <span className="absolute top-4 left-4 bg-[#A86E54]  text-white text-xs px-3 py-1 rounded-full">
+                  <span className="absolute bottom-4 right-4 bg-[#A86E54]  text-white text-xs px-3 py-1 rounded-full">
                     {blog.tags[0]}
                   </span>
                 )}
@@ -130,7 +131,7 @@ const ClientBlogPage = ({ blogs }) => {
                   {blog.excerpt || blog.content?.substring(0, 150)}...
                 </p>
                 <div className="flex flex-wrap font-serif gap-2">
-                  {blog.tags?.slice(1,5).map((tag, tagIndex) => (
+                  {blog.tags?.slice(1, 5).map((tag, tagIndex) => (
                     <span
                       key={`${tag}-${tagIndex}`}
                       className="text-gray-600 flex space-y-1   mb-1"
@@ -179,14 +180,14 @@ const ClientBlogPage = ({ blogs }) => {
             </article>
           ))}
         </div>
-      
+
         {/* Pagination Controls */}
         {totalPages > 1 && (
-          <div className="flex justify-center items-center gap-2 mt-10">
+          <div className="flex flex-wrap justify-center items-center gap-2 mt-10">
             <button
               onClick={() => goToPage(currentPage - 1)}
               disabled={currentPage === 1}
-              className="px-3 py-1 rounded bg-[#F9F0EB] text-[#A86E54] hover:bg-[#A86E54]/20 disabled:opacity-50"
+              className=" py-1 rounded bg-[#F9F0EB] text-[#A86E54] hover:bg-[#A86E54]/20 disabled:opacity-50"
             >
               Prev
             </button>
@@ -194,11 +195,10 @@ const ClientBlogPage = ({ blogs }) => {
               <button
                 key={i}
                 onClick={() => goToPage(i + 1)}
-                className={`px-3 py-1 rounded ${
-                  currentPage === i + 1
+                className={`p-1 rounded ${currentPage === i + 1
                   ? "bg-[#F9F0EB] text-[#A86E54] border font-bold"
                   : "bg-[#F9F0EB] text-[#A86E54] hover:bg-[#A86E54]/20"
-                }`}
+                  }`}
               >
                 {i + 1}
               </button>
@@ -212,7 +212,7 @@ const ClientBlogPage = ({ blogs }) => {
             </button>
           </div>
         )}
-        
+
         {/* Doctor Info Section */}
         <div className="mt-20 bg-[#F9F0EB] rounded-2xl shadow-xl overflow-hidden">
           <div className="md:flex">
@@ -223,7 +223,7 @@ const ClientBlogPage = ({ blogs }) => {
                 doctorInfoInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }
               }
               transition={{ duration: 0.8 }}
-              className="md:w-1/3 bg-[#B97A57] p-8 text-white"
+              className="w-full md:w-1/3 bg-[#B97A57] p-6 md:p-8 text-white relative"
             >
               <h3 className="text-2xl font-bold mb-4">
                 About Dr. Ankit Mehra
@@ -316,7 +316,7 @@ const ClientBlogPage = ({ blogs }) => {
                 </div>
               </div>
             </motion.div>
-            <div className="md:w-2/3 p-8">
+            <div className="w-full md:w-2/3 p-6 md:p-8">
               <motion.div
                 ref={specialtiesRef}
                 initial={{ opacity: 0, y: 30 }}
@@ -401,8 +401,8 @@ const ClientBlogPage = ({ blogs }) => {
             </div>
           </div>
         </div>
-        
-       
+
+
       </div>
     </div>
   );

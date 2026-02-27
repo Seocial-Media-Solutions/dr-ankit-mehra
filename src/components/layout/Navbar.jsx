@@ -7,11 +7,11 @@ import {
   X,
   Phone,
   MapPin,
-  
+
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
- 
- 
+
+
 import SkinTreatments from "../SkinTreatments";
 import HairTreatments from "../HairTreatments";
 import LaserTreatments from "../LaserTreatments";
@@ -21,7 +21,7 @@ export default function Navbar() {
   const [isSkinOpen, setIsSkinOpen] = useState(false);
   const [isHairOpen, setIsHairOpen] = useState(false);
   const [isLaserOpen, setIsLaserOpen] = useState(false);
-  
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -49,8 +49,8 @@ export default function Navbar() {
 
   return (
     <>
-      
-      
+
+
       {/* Main Navbar */}
       <div className="bg-[#F2C8A7] shadow-md py-4">
         <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
@@ -73,13 +73,13 @@ export default function Navbar() {
                 <span className="text-2xl font-bold">
                   <span className="text-[#0055A4]">Dr. </span>
                   <span className="text-[#0055A4] uppercase">
-                      Ankit Mehra
+                    Ankit Mehra
                   </span>
                 </span>
               </div>
             </Link>
           </motion.div>
-          
+
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-6">
             <motion.div
@@ -98,9 +98,9 @@ export default function Navbar() {
               >
                 Home
               </Link>
-              <SkinTreatments/>
-              <HairTreatments/>
-              <LaserTreatments/>
+              <SkinTreatments />
+              <HairTreatments />
+              <LaserTreatments />
               <Link
                 href="/about-us"
                 className="text-gray-700 font-medium hover:text-[#00796B] transition-colors"
@@ -117,7 +117,7 @@ export default function Navbar() {
                 href="/gallery-2"
                 className="text-gray-700 font-medium hover:text-[#00796B] transition-colors"
               >
-               Gallery
+                Gallery
               </Link>
               <Link
                 href="/contact-us"
@@ -127,7 +127,7 @@ export default function Navbar() {
               </Link>
             </motion.div>
           </div>
-          
+
           {/* Mobile Menu Button */}
           <motion.button
             className="md:hidden text-gray-800 p-1 rounded-md focus:outline-none"
@@ -138,7 +138,7 @@ export default function Navbar() {
           </motion.button>
         </div>
       </div>
-      
+
       {/* Mobile Menu Overlay */}
       <AnimatePresence>
         {isOpen && (
@@ -191,7 +191,7 @@ export default function Navbar() {
                     <X size={24} />
                   </motion.button>
                 </div>
-                
+
                 {/* Mobile Menu Links */}
                 <div className="flex flex-col">
                   <motion.div
@@ -237,7 +237,7 @@ export default function Navbar() {
                       }}
                     >
                       <div className="py-3 border-b border-gray-100">
-                        <div 
+                        <div
                           className="text-gray-700 font-medium hover:text-[#0055A4] transition-colors flex justify-between items-center cursor-pointer"
                           onClick={() => setIsSkinOpen(!isSkinOpen)}
                         >
@@ -275,7 +275,7 @@ export default function Navbar() {
                       }}
                     >
                       <div className="py-3 border-b border-gray-100">
-                        <div 
+                        <div
                           className="text-gray-700 font-medium hover:text-[#0055A4] transition-colors flex justify-between items-center cursor-pointer"
                           onClick={() => setIsHairOpen(!isHairOpen)}
                         >
@@ -313,12 +313,12 @@ export default function Navbar() {
                       }}
                     >
                       <div className="py-3 border-b border-gray-100">
-                        <div 
+                        <div
                           className="text-gray-700 font-medium hover:text-[#0055A4] transition-colors flex justify-between items-center cursor-pointer"
                           onClick={() => setIsLaserOpen(!isLaserOpen)}
                         >
                           <span>Laser Treatments</span>
-                         <Image
+                          <Image
                             src="/images/chevron-down.png"
                             alt="Toggle Dropdown"
                             className={`w-4 h-4 transition-transform duration-300 ${isHairOpen ? "rotate-180" : "rotate-0"}`}
@@ -367,7 +367,7 @@ export default function Navbar() {
                       }}
                     >
                       <Link
-                        href={"/blog"}
+                        href={"/blogs"}
                         className="text-gray-700 font-medium hover:text-[#0055A4] transition-colors py-3 border-b border-gray-100 block"
                         onClick={toggleMenu}
                       >
@@ -408,7 +408,7 @@ export default function Navbar() {
                     </motion.div>
                   </motion.div>
                 </div>
-                
+
                 {/* Contact Info in Mobile Menu - Using Lucide Icons */}
                 <motion.div
                   className="mt-12 space-y-6 text-gray-700 border-t border-gray-100 pt-6"
@@ -434,11 +434,11 @@ export default function Navbar() {
                     </div>
                     <div>
                       <span className="font-medium">
-                       62, Lane no 2, opp. Hotel Ambassador, Nagina Bagh,
+                        62, Lane no 2, opp. Hotel Ambassador, Nagina Bagh,
                       </span>
                       <p className="text-sm">
                         {" "}
-                       Muslim Mochi Mohalla, Ajmer, Rajasthan 305001
+                        Muslim Mochi Mohalla, Ajmer, Rajasthan 305001
                       </p>
                     </div>
                   </div>
