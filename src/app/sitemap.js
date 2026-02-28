@@ -266,13 +266,13 @@ export default function sitemap() {
       changeFrequency: "weekly",
       priority: 0.95,
     },
-{
+    {
       url: `${baseUrl}/blogs/remove-pimple-marks-dark-spots-naturally-home-dermatologist-approved`,
       lastModified: currentDate,
       changeFrequency: "weekly",
       priority: 0.95,
     },
-{
+    {
       url: `${baseUrl}/blogs/acne-treatment-at-home-simple-remedies`,
       lastModified: currentDate,
       changeFrequency: "weekly",
@@ -284,25 +284,25 @@ export default function sitemap() {
       changeFrequency: "weekly",
       priority: 0.95,
     },
-     {
+    {
       url: `${baseUrl}/blogs/morning-vs-night-skincare-routine-indian-skin`,
       lastModified: currentDate,
       changeFrequency: "weekly",
       priority: 0.95,
     },
-     {
+    {
       url: `${baseUrl}/blogs/hormonal-acne-causes-treatment-dermatologist-guide`,
       lastModified: currentDate,
       changeFrequency: "weekly",
       priority: 0.95,
     },
-     {
+    {
       url: `${baseUrl}/blogs/hair-fall-causes-advanced-hair-loss-treatments-dermatologist-guide`,
       lastModified: currentDate,
       changeFrequency: "weekly",
       priority: 0.95,
     },
-     {
+    {
       url: `${baseUrl}/blogs/laser-skin-treatment-benefits-side-effects-dermatologist-guide`,
       lastModified: currentDate,
       changeFrequency: "weekly",
@@ -313,21 +313,28 @@ export default function sitemap() {
       lastModified: currentDate,
       changeFrequency: "weekly",
       priority: 0.95,
-    },  
+    },
     {
       url: `${baseUrl}/blogs/best-acne-treatment-options-dermatologist-guide`,
       lastModified: currentDate,
       changeFrequency: "weekly",
       priority: 0.95,
-    },  
-    
-    {url: `${baseUrl}/blogs/skin-allergies-during-weather-change-symptoms-treatment`,
+    },
+
+    {
+      url: `${baseUrl}/blogs/skin-allergies-during-weather-change-symptoms-treatment`,
       lastModified: currentDate,
       changeFrequency: "weekly",
       priority: 0.95,
     },
     {
       url: `${baseUrl}/blogs/seasonal-skincare-tips-prevent-rashes-itching`,
+      lastModified: currentDate,
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/blogs/best-dermatologist-in-ajmer-complete-guide-skin-hair-nail-care`,
       lastModified: currentDate,
       changeFrequency: "weekly",
       priority: 0.95,
