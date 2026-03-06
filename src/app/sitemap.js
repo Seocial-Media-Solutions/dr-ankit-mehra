@@ -339,5 +339,11 @@ export default function sitemap() {
       changeFrequency: "weekly",
       priority: 0.95,
     },
+    {
+      url: `${baseUrl}/blogs/why-do-pimples-keep-coming-back-causes-treatment`,
+      lastModified: currentDate,
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
   ];
 }
