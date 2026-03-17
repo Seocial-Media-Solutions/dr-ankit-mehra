@@ -345,5 +345,11 @@ export default function sitemap() {
       changeFrequency: "weekly",
       priority: 0.95,
     },
+    {
+      url: `${baseUrl}/blogs/best-treatments-for-pigmentation-and-dark-spots`,
+      lastModified: currentDate,
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
   ];
 }
