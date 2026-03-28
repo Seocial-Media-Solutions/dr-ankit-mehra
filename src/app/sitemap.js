@@ -337,6 +337,7 @@ export default function sitemap() {
       url: `${baseUrl}/blogs/best-dermatologist-in-ajmer-complete-guide-skin-hair-nail-care`,
       lastModified: currentDate,
       changeFrequency: "weekly",
+      
       priority: 0.95,
     },
     {
