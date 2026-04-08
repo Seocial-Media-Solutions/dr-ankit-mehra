@@ -358,5 +358,11 @@ export default function sitemap() {
       changeFrequency: "weekly",
       priority: 0.95,
     },
+    {
+      url: `${baseUrl}/blogs/how-to-identify-your-skin-type-at-home`,
+      lastModified: currentDate,
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
   ];
 }

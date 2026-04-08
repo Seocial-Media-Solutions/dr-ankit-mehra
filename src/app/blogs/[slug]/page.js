@@ -186,7 +186,7 @@ export default async function SingleBlogPage({ params }) {
   return (
     <article className="min-h-screen bg-gradient-to-b from-blue-50 to-teal-50 lg:pt-5 pt-5">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="relative mt-6 lg:mt-0 lg:aspect-[2/1] aspect-[3/2] w-full">
+        <div className="relative mt-6 lg:mt-0  aspect-[3/2] w-full">
           <Image
             src={blog.image || "/images/home/dermatologist-blog-hero.jpg"}
             alt={blog.alt || blog.title}
