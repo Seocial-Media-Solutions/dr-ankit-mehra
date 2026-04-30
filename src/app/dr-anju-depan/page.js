@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import React from 'react';
 export const metadata = {
-  title: "Meet Dr. Anju Depan - Best Gynecologist and Obstetrician in Ajmer",
+  title: "Best Gynecologist and Obstetrician in Ajmer | Dr. Anju Depan",
   description:
-    "Learn about Dr. Anju Depan's expertise in Obstetrics & Gynaecology. Dedicated to providing comprehensive women's healthcare with years of experience.",
+    "Consult Dr. Anju Depan, best gynecologist and obstetrician in Ajmer for pregnancy care, women’s health, infertility treatment, delivery, and expert gyne care.",
   keywords: [
     "Dr. Anju Depan gynecologist",
     "Dr. Anju Depan obstetrician",
@@ -17,9 +17,9 @@ export const metadata = {
     "obstetrics specialist Ajmer"
   ],
   openGraph: {
-    title: "Meet Dr. Anju Depan - Best Gynecologist and Obstetrician in Ajmer",
+    title: "Best Gynecologist and Obstetrician in Ajmer | Dr. Anju Depan",
     description:
-      "Learn about Dr. Anju Depan's expertise in Obstetrics & Gynaecology. Dedicated to providing comprehensive women's healthcare with years of experience.",
+      "Consult Dr. Anju Depan, best gynecologist and obstetrician in Ajmer for pregnancy care, women’s health, infertility treatment, delivery, and expert gyne care.",
     images: [
       {
         url: "/images/home/anju-depan.jpeg", // Replace with actual image path
@@ -37,9 +37,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Meet Dr. Anju Depan - Best Gynecologist and Obstetrician in Ajmer",
+    title: "Best Gynecologist and Obstetrician in Ajmer | Dr. Anju Depan",
     description:
-      "Learn about Dr. Anju Depan's expertise in Obstetrics & Gynaecology. Dedicated to providing comprehensive women's healthcare with years of experience.",
+      "Consult Dr. Anju Depan, best gynecologist and obstetrician in Ajmer for pregnancy care, women’s health, infertility treatment, delivery, and expert gyne care.",
     images: ["/images/home/anju-depan.jpeg"], // Replace with actual path
   },
   robots: {
